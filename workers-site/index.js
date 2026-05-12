@@ -1,13 +1,7 @@
-import { getAssetFromKV } from "@cloudflare/kv-asset-handler";
-
-addEventListener("fetch", (event) => {
-  event.respondWith(handleEvent(event));
-});
-
-async function handleEvent(event) {
-  try {
-    return await getAssetFromKV(event);
-  } catch (e) {
-    return new Response("Not Found", { status: 404 });
+export default {
+  async fetch(request, env) {
+    const url = new URL(request.url);
+    const path = url.pathname === "/" ? "/index.html" : url.pathname;
+    return env.ASSETS.fetch(new Request(new URL(path, request.url)));
   }
-}
+};
