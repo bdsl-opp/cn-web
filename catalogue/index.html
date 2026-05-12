@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalogue — WEB Test</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="catalogue">
+  <header class="site-header" data-header>
+    <button class="menu-button" data-menu-button aria-label="Open menu">menu</button>
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="../catalogue/index.html">catalogue</a>
+      <a href="../about/index.html">about</a>
+    </nav>
+    <button class="cart-button" data-cart-button>cart <span data-cart-count>(0)</span></button>
+  </header>
+
+  <aside class="menu-panel" data-menu-panel aria-hidden="true">
+    <button class="panel-close" data-menu-close aria-label="Close menu">close</button>
+    <a href="../index.html">home</a>
+    <a href="../catalogue/index.html">catalogue</a>
+    <a href="../about/index.html">about</a>
+  </aside>
+
+  <aside class="cart-panel" data-cart-panel aria-hidden="true">
+    <button class="panel-close" data-cart-close aria-label="Close cart">close</button>
+    <p class="cart-empty">Your cart is empty.</p>
+  </aside>
+
+  <main class="page-main">
+    <section class="page-hero compact">
+      <a class="page-logo" href="../index.html">JHON DOE</a>
+      <h1>catalogue</h1>
+    </section>
+
+    <section class="catalogue-list reveal-section">
+      <article class="product-row" data-open-product>
+        <img src="../image/placeholder-01.svg" alt="Item 01">
+        <div>
+          <h2>The First Object</h2>
+          <p>WT-G1 / test item</p>
+        </div>
+        <button data-add-cart>Add</button>
+      </article>
+      <article class="product-row" data-open-product>
+        <img src="../image/placeholder-02.svg" alt="Item 02">
+        <div>
+          <h2>Soft Chair</h2>
+          <p>WT-G1 / test item</p>
+        </div>
+        <button data-add-cart>Add</button>
+      </article>
+      <article class="product-row" data-open-product>
+        <img src="../image/placeholder-03.svg" alt="Item 03">
+        <div>
+          <h2>Dining Chair</h2>
+          <p>WT-G1 / test item</p>
+        </div>
+        <button data-add-cart>Add</button>
+      </article>
+      <article class="product-row" data-open-product>
+        <img src="../image/placeholder-04.svg" alt="Item 04">
+        <div>
+          <h2>Table Set</h2>
+          <p>WT-G1 / test item</p>
+        </div>
+        <button data-add-cart>Add</button>
+      </article>
+    </section>
+  </main>
+
+  <div class="product-modal" data-product-modal aria-hidden="true">
+    <button class="panel-close" data-product-close>close</button>
+    <p>Static product preview. Replace later.</p>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

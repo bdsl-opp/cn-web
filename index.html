@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WEB Test</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <header class="site-header" data-header>
+    <button class="menu-button" data-menu-button aria-label="Open menu">menu</button>
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="catalogue/index.html">catalogue</a>
+      <a href="about/index.html">about</a>
+    </nav>
+    <button class="cart-button" data-cart-button>cart <span data-cart-count>(0)</span></button>
+  </header>
+
+  <aside class="menu-panel" data-menu-panel aria-hidden="true">
+    <button class="panel-close" data-menu-close aria-label="Close menu">close</button>
+    <a href="catalogue/index.html">catalogue</a>
+    <a href="about/index.html">about</a>
+    <a href="#catalogue-preview">preview</a>
+    <a href="#footer">contact</a>
+  </aside>
+
+  <aside class="cart-panel" data-cart-panel aria-hidden="true">
+    <button class="panel-close" data-cart-close aria-label="Close cart">close</button>
+    <p class="cart-empty">Your cart is empty.</p>
+  </aside>
+
+  <main>
+    <section class="hero" data-hero>
+      <div class="center-logo" data-logo>JHON DOE</div>
+      <div class="scroll-hint">scroll</div>
+    </section>
+
+    <section id="catalogue-preview" class="catalogue-preview reveal-section">
+      <a class="work-card" href="catalogue/index.html">
+        <img src="image/placeholder-01.svg" alt="Catalogue preview 01">
+        <span>Catalogue Image 01</span>
+      </a>
+      <a class="work-card" href="catalogue/index.html">
+        <img src="image/placeholder-02.svg" alt="Catalogue preview 02">
+        <span>Catalogue Image 02</span>
+      </a>
+      <a class="work-card" href="catalogue/index.html">
+        <img src="image/placeholder-03.svg" alt="Catalogue preview 03">
+        <span>Catalogue Image 03</span>
+      </a>
+      <a class="work-card" href="catalogue/index.html">
+        <img src="image/placeholder-04.svg" alt="Catalogue preview 04">
+        <span>Catalogue Image 04</span>
+      </a>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <span>WEB TEST</span>
+    <a href="mailto:hello@example.com">contact</a>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
