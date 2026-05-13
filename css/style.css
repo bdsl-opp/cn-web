@@ -75,13 +75,16 @@ button {
   position: fixed;
   z-index: 10;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Timeless', Arial, Helvetica;
-  font-size: clamp(44px, 8.2vw, 124px);
-  letter-spacing: -.08em;
-  white-space: nowrap;
+  left: 22px;
+  transform: translateY(-50%);
+  width: clamp(180px, 30vw, 410px);
   pointer-events: none;
+}
+
+.center-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .scroll-hint {
