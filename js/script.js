@@ -25,7 +25,7 @@
     const limit = window.innerHeight * 0.75;
     const progress = Math.min(window.scrollY / limit, 1);
     logo.style.opacity = String(1 - progress);
-    logo.style.transform = 'translate(-50%, calc(-50% - ' + progress * 26 + 'px))';
+    logo.style.transform = 'translate(calc(-50% - ' + progress * 26 + 'px))';
   }
 
   function revealSections() {
