@@ -75,7 +75,7 @@ button {
   position: fixed;
   z-index: 10;
   top: 50%;
-  left: 0;
+  left: 22px;
   transform: translateY(-50%);
   width: clamp(360px, 60vw, 820px);
   pointer-events: none;
