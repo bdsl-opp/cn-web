@@ -75,11 +75,11 @@ button {
   position: fixed;
   z-index: 10;
   top: 50%;
-  left: 15px;
+  left: 0;
   transform: translateY(-50%);
   width: clamp(360px, 60vw, 820px);
   pointer-events: none;
-  background: red;
+  overflow: visible;
 }
 
 .center-logo img {
